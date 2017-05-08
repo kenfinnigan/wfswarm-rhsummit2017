@@ -1,0 +1,9 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ${project.artifactId}
+spec:
+  replicas: 1
+  template:
+    spec:
+      serviceAccountName: service
